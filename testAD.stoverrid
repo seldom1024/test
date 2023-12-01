@@ -1,0 +1,19 @@
+http:
+  mitm:
+    - '*.etax.*'
+  force-http-engine:
+    - '*.etax.*'
+  script:
+    - match: *.etax.*
+      name: your-fancy-script-etax
+      type: response # request / response
+      require-body: true
+      timeout: 20
+      argument: ''
+      binary-mode: false
+      max-size: 1048576 # 1MB
+ 
+script-providers:
+  your-fancy-script-etax:
+    url: https://your-fancy-script.com/your-fancy-script.js
+    interval: 86400
