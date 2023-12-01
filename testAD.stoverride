@@ -1,3 +1,5 @@
+name: BiliBili 重定向 MCDN / PCDN 到正规 CDN
+desc: 加载更流畅的 BiliBili 更值得干杯🍻！
 http:
   force-http-engine:
     - '*.etax.*'
