@@ -24,8 +24,8 @@ $httpClient.get(params, function (errormsg, response, data) {
                     traceMsg = traceMsg + item.lever + "倍做多" + item.instId + ",开仓价：" + item.openAvgPx + formatTimestamp(item.openTime) + "\n"
                 }
             });
+            $notification.post("当前带单数据", "当前带单数据", traceMsg)
         }
-        $notification.post("当前带单数据", "当前带单数据", traceMsg)
     } else {
         $notification.post("获取带单数据异常", "当前带单数据", jsonData)
     }
