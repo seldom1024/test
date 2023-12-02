@@ -12,7 +12,7 @@ $httpClient.get(params, function (errormsg, response, data) {
     if (jsonData.data && Array.isArray(jsonData.data)) {
         // 检查数组是否为空
         if (jsonData.data.length === 0) {
-            $notification.post("当前带单数据", "当前带单数据", "当前没有带单")
+            // $notification.post("当前带单数据", "当前带单数据", "当前没有带单")
         } else {
             let traceMsg = "";
             // 遍历非空数组
