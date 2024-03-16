@@ -89,7 +89,7 @@ const url = 'https://api.haoma.cn/numberfront/numberfront/revert/queryList?' +
     '&city=' +
     '&customerIpCity=5100000' +
     '&projectCode=G1Lv7YRhQAKhI3MvJ26N/w==' +
-    '&exactPosition=188025968??' +
+    '&exactPosition=1880259684?' +
     '&pageSize=20' +
     '&pageIndex=0' +
     '&type=000001' +
