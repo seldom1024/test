@@ -112,15 +112,10 @@ const Protagnist2 = "号码查询2";
 $hammer.request('get', params2, (error, response, data) => {
     const result = JSON.parse(response);
     let detail;
-    $hammer.alert(Protagnist2, result);
-    if (result.code == 0) {
-        detail = "结果，成功："
-        const list = result.date.list;
-        for (let i = 0; i < list.length; ++i) {
-            detail = detail + list[i].mobile + ";";
-        }
-    } else {
-        detail = `结果: 未知, ${result.msg}`
+    detail = "结果："
+    const list = result.data.list;
+    for (let i = 0; i < list.length; ++i) {
+        detail = detail + list[i].mobile + ";";
     }
     $hammer.alert(Protagnist2, detail);
     $hammer.done();
