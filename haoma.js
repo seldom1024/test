@@ -125,50 +125,5 @@ $hammer.request('post', params, (error, response, data) => {
         detail = `结果: 未知, ${result.msg}`
     }
     $hammer.alert(Protagnist, detail);
+    $hammer.done();
 })
-
-
-const url2 = 'https://api.jihaoba.com/weapp/v1/list.json?' +
-    'page=1' +
-    '&key=1880259' +
-    '&tail=0' +
-    '&cityid=0' +
-    '&manager=0' +
-    '&grade=-1' +
-    '&s=' +
-    '&four=0' +
-    '&zero=0' +
-    '&minprice=' +
-    '&maxprice=';
-
-const params2 = {
-    url: url2,
-    headers: {
-        "Host": "api.jihaoba.com",
-        "Connection": "keep-alive",
-        "content-type": "application/json",
-        "Accept-Encoding": "gzip,compress,br,deflate",
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.46(0x18002e2c) NetType/WIFI Language/zh_CN",
-        "Referer": "https://servicewechat.com/wxa4cef44cdfd0ca81/39/page-frame.html"
-    }
-}
-const Protagnist2 = "号码查询2";
-$hammer.request('get', params2, (error, response, data) => {
-    const result = JSON.parse(response);
-    let detail;
-    if (result.code === 0) {
-        detail = "结果，成功："
-        const list = result.date.list;
-        if (Array.isArray(list) && list.length) {
-            detail = "暂无数据"
-        } else {
-            for (let i = 0; i < list.length; ++i) {
-                detail = detail + list[i].mobile + ";";
-            }
-        }
-    } else {
-        detail = `结果: 未知, ${result.msg}`
-    }
-    $hammer.alert(Protagnist2, detail);
-})
-$hammer.done();
