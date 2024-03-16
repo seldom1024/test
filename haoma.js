@@ -125,7 +125,7 @@ $hammer.request('post', params, (error, response, data) => {
         detail = `结果: 未知, ${result.msg}`
     }
     $hammer.alert(Protagnist, detail);
-    // $hammer.done();
+    $hammer.done();
 })
 
 
@@ -171,5 +171,5 @@ $hammer.request('get', params2, (error, response, data) => {
         detail = `结果: 未知, ${result.msg}`
     }
     $hammer.alert(Protagnist2, detail);
+    $hammer.done();
 })
-$hammer.done();
