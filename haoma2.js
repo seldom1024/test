@@ -108,7 +108,7 @@ const params2 = {
         "Referer": "https://servicewechat.com/wxa4cef44cdfd0ca81/39/page-frame.html"
     }
 }
-const Protagnist2 = "号码查询2";
+const Protagnist2 = "集号吧手机靓号";
 $hammer.request('get', params2, (error, response, data) => {
     const result = JSON.parse(response);
     let detail;
