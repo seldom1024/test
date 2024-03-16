@@ -112,7 +112,7 @@ const Protagnist2 = "号码查询2";
 $hammer.request('get', params2, (error, response, data) => {
     const result = JSON.parse(response);
     let detail;
-    if (result.code === 0) {
+    if (result.code == 0) {
         detail = "结果，成功："
         const list = result.date.list;
         for (let i = 0; i < list.length; ++i) {
