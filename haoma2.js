@@ -86,7 +86,7 @@ const $hammer = (() => {
 
 const url2 = 'https://api.jihaoba.com/weapp/v1/list.json?' +
     'page=1' +
-    '&key=1880259' +
+    '&key=1880259684' +
     '&tail=0' +
     '&cityid=0' +
     '&manager=0' +
