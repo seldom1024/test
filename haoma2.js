@@ -115,12 +115,8 @@ $hammer.request('get', params2, (error, response, data) => {
     if (result.code === 0) {
         detail = "结果，成功："
         const list = result.date.list;
-        if (Array.isArray(list) && list.length) {
-            detail = "暂无数据"
-        } else {
-            for (let i = 0; i < list.length; ++i) {
-                detail = detail + list[i].mobile + ";";
-            }
+        for (let i = 0; i < list.length; ++i) {
+            detail = detail + list[i].mobile + ";";
         }
     } else {
         detail = `结果: 未知, ${result.msg}`
