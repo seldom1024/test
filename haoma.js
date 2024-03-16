@@ -114,12 +114,8 @@ $hammer.request('post', params, (error, response, data) => {
     if (result.result) {
         detail = "结果，成功："
         const list = result.date.list;
-        if (Array.isArray(list) && list.length) {
-            detail = "暂无数据"
-        } else {
-            for (let i = 0; i < list.length; ++i) {
-                detail = detail + list[i].fullNumber + ";";
-            }
+        for (let i = 0; i < list.length; ++i) {
+            detail = detail + list[i].fullNumber + ";";
         }
     } else {
         detail = `结果: 未知, ${result.msg}`
