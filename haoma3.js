@@ -99,7 +99,7 @@ const url2 = 'https://x.qiangka.com/m/io/pro/S_City/11016.html?' +
     '&gs=' +
     '&st=' +
     '&noin=' +
-    '&klist=188025968__';
+    '&klist=1880259684_';
 
 const params2 = {
     url: url2,
