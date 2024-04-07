@@ -1,6 +1,6 @@
 
 [Script]
 # 每日任务
-cron "0 0/30 * * * ?" script-path=https://raw.githubusercontent.com/seldom1024/test/master/haoma.js, tag=号码优汇
-cron "0 0/30 * * * ?" script-path=https://raw.githubusercontent.com/seldom1024/test/master/haoma2.js, tag=集号吧手机靓号
-cron "0 0/30 * * * ?" script-path=https://raw.githubusercontent.com/seldom1024/test/master/haoma3.js, tag=靓号
+cron "0 */4 * * *" script-path=https://raw.githubusercontent.com/seldom1024/test/master/haoma.js, tag=号码优汇
+cron "0 */4 * * *" script-path=https://raw.githubusercontent.com/seldom1024/test/master/haoma2.js, tag=集号吧手机靓号
+cron "0 */4 * * *" script-path=https://raw.githubusercontent.com/seldom1024/test/master/haoma3.js, tag=靓号
