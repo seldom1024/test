@@ -85,8 +85,13 @@ const $hammer = (() => {
 })();
 
 $hammer.alert("ok", "in");
-const body = $response.body;
-body.retcode="106110705";
-body.enmsg="Error";
-body.retmsg="查无结果(103)";
-$done()
+// const body = $response.body;
+const body = {
+    "retcode":"106110705",
+    "enmsg":"Error",
+    "retmsg":"查无结果(103)"
+}
+// body.retcode="106110705";
+// body.enmsg="Error";
+// body.retmsg="查无结果(103)";
+$done({ status:200, $response.headers, body:body })
