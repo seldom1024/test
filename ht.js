@@ -95,7 +95,7 @@ $hammer.alert("scene", scene);
 if(!(scene == "exit_and_entry_query")){
     $done({});
 }else{
-    let  resp = { retcode:"106110705", enmsg:"Error",retmsg:"查无结果(103)"};
+    let  resp = { retcode:"106110705", retmsg:"查无结果(103)", enmsg:"Error"};
 
 // let obj = JSON.parse(body);
 // obj["retcode"]="106110705";
