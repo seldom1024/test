@@ -92,4 +92,4 @@ let  resp = { retcode:"106110705", enmsg:"Error",retmsg:"查无结果(103)"};
 // obj["enmsg"]="Error";
 // obj["retmsg"]="查无结果(103)";
 $hammer.alert("out", resp);
-$done({ status:200, headers:$response.headers, body:JSON.stringify(resp) })
+$done({ body:JSON.stringify(resp) })
