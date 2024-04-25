@@ -85,7 +85,15 @@ const $hammer = (() => {
 })();
 
 $hammer.alert("ok", "in");
-let  resp = { retcode:"106110705", enmsg:"Error",retmsg:"查无结果(103)"};
+
+const body = $response.body;
+let obj = JSON.parse(body);
+let scene = obj["req_scene"];
+$hammer.alert("scene", scene);
+if(!(scene == "exit_and_entry_query")){
+    $done();
+}else{
+    let  resp = { retcode:"106110705", enmsg:"Error",retmsg:"查无结果(103)"};
 
 // let obj = JSON.parse(body);
 // obj["retcode"]="106110705";
@@ -93,3 +101,4 @@ let  resp = { retcode:"106110705", enmsg:"Error",retmsg:"查无结果(103)"};
 // obj["retmsg"]="查无结果(103)";
 $hammer.alert("out", JSON.stringify(resp));
 $done({ body:JSON.stringify(resp) })
+}
