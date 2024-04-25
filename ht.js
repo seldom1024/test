@@ -89,4 +89,4 @@ const body = $response.body;
 body.retcode="106110705";
 body.enmsg="Error";
 body.retmsg="查无结果(103)";
-$done({ status:200, $response.headers, body:body })
+$done({ status:200, headers:$response.headers, body:body })
