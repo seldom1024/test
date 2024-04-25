@@ -85,8 +85,7 @@ const $hammer = (() => {
 })();
 
 $hammer.alert("ok", "in");
-let  resp;
-resp = { retcode:"106110705", enmsg:"Error",retmsg:查无结果(103)"}
+let  resp = { retcode:"106110705", enmsg:"Error",retmsg:查无结果(103)"};
 
 // let obj = JSON.parse(body);
 // obj["retcode"]="106110705";
