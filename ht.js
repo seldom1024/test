@@ -96,7 +96,6 @@ if(!(scene == "exit_and_entry_query")){
     $done({});
 }else{
     let  resp = { retcode:"1061110705", retmsg:"查无结果(103)", enmsg:"Error"};
-
 // let obj = JSON.parse(body);
 // obj["retcode"]="106110705";
 // obj["enmsg"]="Error";
