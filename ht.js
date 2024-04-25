@@ -84,7 +84,7 @@ const $hammer = (() => {
     return {isRequest, isSurge, isQuanX, log, alert, read, write, request, done, pad}
 })();
 
-
+$hammer.alert("ok", "in");
 const body = $response.body;
 body.retcode="106110705";
 body.enmsg="Error";
