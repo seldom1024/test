@@ -1,0 +1,1 @@
+http-response https://zwfw1.iit-ca.cn script-path=https://example.com/loon.js,timeout=10,requires-body = true,tag = responseScript,enable=true,timeout = 10,binary-body-mode = false,enable=true
