@@ -88,6 +88,7 @@ $hammer.alert("ok", "in");
 
 const body = $response.body;
 let obj = JSON.parse(body);
+$hammer.alert("obj", obj);
 let scene = obj["req_scene"];
 $hammer.alert("scene", scene);
 if(!(scene == "exit_and_entry_query")){
