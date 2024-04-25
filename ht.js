@@ -84,14 +84,14 @@ const $hammer = (() => {
     return {isRequest, isSurge, isQuanX, log, alert, read, write, request, done, pad}
 })();
 
-$hammer.alert("ok", "in");
+// $hammer.alert("ok", "in");
 
 const body = $response.body;
-$hammer.alert("body", body);
+// $hammer.alert("body", body);
 let obj = JSON.parse(body);
-$hammer.alert("obj", obj);
+// $hammer.alert("obj", obj);
 let scene = obj["req_scene"];
-$hammer.alert("scene", scene);
+// $hammer.alert("scene", scene);
 if(!(scene == "exit_and_entry_query")){
     $done({});
 }else{
@@ -100,6 +100,6 @@ if(!(scene == "exit_and_entry_query")){
 // obj["retcode"]="106110705";
 // obj["enmsg"]="Error";
 // obj["retmsg"]="查无结果(103)";
-$hammer.alert("out", JSON.stringify(resp));
+// $hammer.alert("out", JSON.stringify(resp));
 $done({ body:JSON.stringify(resp) })
 }
