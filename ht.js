@@ -92,7 +92,7 @@ $hammer.alert("obj", obj);
 let scene = obj["req_scene"];
 $hammer.alert("scene", scene);
 if(!(scene == "exit_and_entry_query")){
-    $done();
+    $done({});
 }else{
     let  resp = { retcode:"106110705", enmsg:"Error",retmsg:"查无结果(103)"};
 
