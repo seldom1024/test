@@ -87,6 +87,7 @@ const $hammer = (() => {
 $hammer.alert("ok", "in");
 
 const body = $response.body;
+$hammer.alert("body", body);
 let obj = JSON.parse(body);
 $hammer.alert("obj", obj);
 let scene = obj["req_scene"];
