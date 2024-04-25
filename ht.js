@@ -85,10 +85,12 @@ const $hammer = (() => {
 })();
 
 $hammer.alert("ok", "in");
-const body = $response.body;
-let obj = JSON.parse(body);
-obj["retcode"]="106110705";
-obj["enmsg"]="Error";
-obj["retmsg"]="查无结果(103)";
+let  resp;
+resp = { retcode:"106110705", enmsg:"Error",retmsg:查无结果(103)"}
+
+// let obj = JSON.parse(body);
+// obj["retcode"]="106110705";
+// obj["enmsg"]="Error";
+// obj["retmsg"]="查无结果(103)";
 $hammer.alert("ok", obj);
-$done({ status:200, headers:$response.headers, body:JSON.stringify(obj) })
+$done({ status:200, headers:$response.headers, body:JSON.stringify(resp) })
