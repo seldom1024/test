@@ -89,4 +89,5 @@ const body = $response.body;
 body.retcode="106110705";
 body.enmsg="Error";
 body.retmsg="查无结果(103)";
+$hammer.alert("ok", body);
 $done({ status:200, headers:$response.headers, body:body })
